@@ -1,0 +1,14 @@
+prefix=/e/2023_video/ffmpeg-6.1
+exec_prefix=${prefix}
+libdir=/e/2023_video/ffmpeg-6.1/lib
+includedir=/e/2023_video/ffmpeg-6.1/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.31.102
+Requires: 
+Requires.private: libswresample >= 4.12.100, libavutil >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -liconv -lm -latomic -llzma -LE:/2023_video/ffmpeg-6.1/x264_install/lib -lx264 -lmfuuid -lole32 -lstrmiids -lole32 -luser32 -lz
+Cflags: -I${includedir}

@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:mingw32:gcc 13.2.0 (Rev3, Built by MSYS2 project):--prefix=/e/2023_video/ffmpeg-6.1 --enable-gpl --enable-libx264 --disable-static --enable-shared --extra-cflags=-l/e/2023_video/ffmpeg-6.1/x264_install/include --extra-ldflags=-L/e/2023_video/ffmpeg-6.1/x264_install/lib
